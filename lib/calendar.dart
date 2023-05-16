@@ -1,10 +1,11 @@
-import 'package:calendar/event.dart';
-import 'package:calendar/phases.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:moon_calendar/phases.dart';
+import 'package:moon_calendar/styles.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import 'ekadashi.dart';
+import 'event.dart';
 
 class Calendar extends StatefulWidget {
   @override
@@ -103,12 +104,12 @@ class _CalendarState extends State<Calendar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF1F033A),
+      backgroundColor: Colors.deepPurple,
       body: Padding(
         padding: const EdgeInsets.all(28.0),
         child: Container(
             decoration: BoxDecoration(
-              color: Color(0xFF2A084A),
+              color: backgroundWidget,
               borderRadius: BorderRadius.circular(25.0),
             ),
             child: Column(
@@ -201,14 +202,14 @@ class _CalendarState extends State<Calendar> {
                     todayDecoration: BoxDecoration(
                         color: Colors.purpleAccent,
                         border: Border.all(
-                          color: Color(0xFF2A084A),
+                          color: borderColor,
                         ),
                         shape: BoxShape.rectangle,
                         borderRadius: BorderRadius.all(Radius.circular(5))),
                     defaultTextStyle: TextStyle(color: Colors.white),
                     defaultDecoration: BoxDecoration(
                       border: Border.all(
-                        color: Color(0xFF2A084A),
+                        color: borderColor,
                       ),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(5.0),
@@ -222,7 +223,7 @@ class _CalendarState extends State<Calendar> {
                     selectedTextStyle: TextStyle(color: Colors.white),
                     weekendDecoration: BoxDecoration(
                       border: Border.all(
-                        color: Color(0xFF2A084A),
+                        color: borderColor,
                       ),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(5.0),

@@ -1,9 +1,16 @@
-# Calendar
+# moon_calendar
 
-Hello World! This is Elai Shane from ESTech Channel.
+A new Flutter project.
 
-I have created a new series nammed **Calendar** in which I will be showing you multiple calendar UI and make connections with the firebase, SQLite, Google Calendar as well as physical devices.
+## Getting Started
 
-I do hope you like the series.
-If you like the code and the content. Do like, share my video and star my github repository. Also share my youtube channel which would motivate me to create more contents
- 
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
